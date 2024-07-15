@@ -1,11 +1,9 @@
 import { Router } from "express";
-
-import exampleRoutes from "./features/example/example.routes";
+import trackingRoutes from "./features/tracking/tracking.routes";
 
 const router: Router = Router();
 
 export default (): Router => {
-  exampleRoutes(router);
-
+  trackingRoutes(router);
   return router;
 };
